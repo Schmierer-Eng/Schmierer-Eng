@@ -7,12 +7,18 @@
 ## Projects
 
 ### Interactive Factory Simulation Dashboard
-A comprehensive SimPy-based factory simulation with real-time interactive dashboard. Features multiple production lines, machines, workers, inventory management, and quality control with live visualizations.
+A comprehensive SimPy-based factory simulation with real-time interactive dashboard and PDF report generation. Features multiple production lines, machines, workers, inventory management, and quality control with live visualizations.
 
-**Quick Start:**
+**Interactive Dashboard:**
 ```bash
 pip install -r requirements.txt
 python dashboard.py
+# Open http://127.0.0.1:8050 in browser
+```
+
+**Static PDF Report:**
+```bash
+python generate_pdf_report.py --duration 100 --machines 5 --workers 10
 ```
 
 See [FACTORY_DASHBOARD_README.md](FACTORY_DASHBOARD_README.md) for detailed documentation.
